@@ -46,7 +46,7 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def main(rows, cols, generations, delay):
-    grid = create_grid(rows, cols)
+    grid = create_grid(rows-1, cols)
 
     for generation in range(generations):
         clear_screen()
