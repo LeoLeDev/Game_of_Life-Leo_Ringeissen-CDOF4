@@ -43,23 +43,22 @@ def update_grid(grid):
     return new_grid
 
 def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('cls' if os.name == 'nt' else 'clear')        
 
-def main(rows, cols, generations, delay):
+def main():
+    rows, cols = get_user_input()
+    generations = 100
+    delay = 0.1
+
     grid = create_grid(rows, cols)
 
     for generation in range(generations):
         clear_screen()
         print_grid(grid)
         grid = update_grid(grid)
-        time.sleep(delay)
+        time.sleep(delay) 
 
-if __name__ == "__main__":
-    rows = 20
-    cols = 40
-    generations = 100
-    delay = 0.1
-
-    main(rows, cols, generations, delay)
+if name == "main":
+    main()
 
     
