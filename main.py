@@ -56,7 +56,7 @@ def main():
         clear_screen()
         print_grid(grid)
         grid = update_grid(grid)
-        time.sleep(delay)
+        time.sleep(delay) 
 
 if name == "main":
     main()
