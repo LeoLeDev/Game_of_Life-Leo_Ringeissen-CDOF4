@@ -1,5 +1,8 @@
 # Game of Life
 
+## Overview
+The Game of Life is a cellular automaton devised by mathematician John Conway. It's a zero-player game, meaning that its evolution is determined by its initial state, with no further input from humans.
+
 ## Description
 This Python program implements a basic version of the Game of Life. It uses a grid of cells, where each cell can be alive (1) or dead (0). The program simulates multiple generations based on the rules of the Game of Life, creating an animation of the evolving grid.
 
